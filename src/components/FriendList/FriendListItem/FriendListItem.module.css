@@ -1,0 +1,13 @@
+.avatar {
+  width: 100px;
+}
+.text {
+  text-align: center;
+  margin-top: 10px;
+}
+.online {
+  color: green;
+}
+.ofline {
+  color: red;
+}
