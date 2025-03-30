@@ -1,12 +1,62 @@
-# React + Vite
+# React App for User Profiles, Friends, and Transactions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This React application displays user profiles, friend lists, and transaction history. It uses modular components and CSS modules for styling.
 
-Currently, two official plugins are available:
+## Features
+- Display user profile information
+- Show a list of friends with status indicators
+- Render transaction history from JSON data
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Viktor-WEB-D-E-V/learning-social-dashboard.git
+   ```
+   ```sh
+   cd learning-social-dashboard
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-## Expanding the ESLint configuration
+## Project Structure
+```
+src/
+├── components/
+│   ├── FriendList/
+│   │   ├── FriendList.jsx
+│   │   ├── FriendList.module.css
+│   │   ├── FriendListItem/
+│   │   │   ├── FriendListItem.jsx
+│   │   │   ├── FriendListItem.module.css
+│   ├── Profile/
+│   │   ├── Profile.jsx
+│   │   ├── Profile.module.css
+│   ├── TransactionHistory/
+│   │   ├── TransactionHistory.jsx
+│   │   ├── TransactionHistory.module.css
+│   │   ├── TransactionHistoryItem/
+│   │   │   ├── TransactionHistoryItem.jsx
+│   │   │   ├── TransactionHistoryItem.module.css
+├── utils/
+│   ├── friends.json
+│   ├── transactions.json
+│   ├── userData.json
+├── App.jsx
+├── App.css
+├── index.css
+├── main.jsx
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Dependencies
+- React
+- Vite (for development)
+
+
+
