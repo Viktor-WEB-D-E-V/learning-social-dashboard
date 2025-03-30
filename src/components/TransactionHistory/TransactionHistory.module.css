@@ -1,16 +1,15 @@
-table {
+.table {
   width: 600px;
   border-collapse: collapse;
   margin: 100px auto 20px;
 }
 
-th {
+.head {
   color: #f2f2f2;
   background-color: #303030;
 }
 
-th,
-td {
+.th {
   padding: 4px;
   text-align: center;
   border: 1px solid #1a1a1a;

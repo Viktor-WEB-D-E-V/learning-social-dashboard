@@ -1,14 +1,14 @@
 import TransactionHistoryItem from "./TransactionHistoryItem/TransactionHistoryItem";
 
-import "./TransactionHistory.module.css";
+import style from "./TransactionHistory.module.css";
 function TransactionHistory({ items }) {
   return (
-    <table>
-      <thead>
+    <table className={style.table}>
+      <thead className={style.head}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={style.th}>Type</th>
+          <th className={style.th}>Amount</th>
+          <th className={style.th}>Currency</th>
         </tr>
       </thead>
       <tbody>
